@@ -13,7 +13,7 @@ gulp.task('clean', async function(){
 gulp.task('scss', function(){
     return gulp.src('app/scss/**/*.scss')
     .pipe(autoprefixer({
-        browsers:['last 8 versions']
+        overrideBrowserslist:['last 8 versions']
     }))
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('app/css'))
