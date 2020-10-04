@@ -47,7 +47,7 @@ gulp.task('js', function(){
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('app.js')) 
+    .pipe(gulp.dest('app/js')) 
     .pipe(browser.reload({stream:true}))
 });
 
